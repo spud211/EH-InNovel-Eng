@@ -71,13 +71,13 @@ fun ReadingDialog(
                     style = MaterialTheme.typography.titleMedium
                 )
                 Text(
-                    text = "正在阅读....",
+                    text = "Reading....",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
                 Spacer(modifier = Modifier.height(4.dp))
                 Button(onClick = onExit) {
-                    Text(text = "退出阅读")
+                    Text(text = "Exit reading")
                 }
             }
         }

@@ -119,7 +119,7 @@ fun AppScreen(
                 }
             }
         ) {
-            Text("退出 EvenHub")
+            Text("Exit EvenHub")
         }
     }
     val currentBook = readingBook.value

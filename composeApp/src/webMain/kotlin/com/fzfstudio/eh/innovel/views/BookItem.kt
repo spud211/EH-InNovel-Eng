@@ -70,7 +70,7 @@ fun BookItem(
                     style = MaterialTheme.typography.titleMedium
                 )
                 Text(
-                    text = "作者：${book.author}",
+                    text = "Author: ${book.author}",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )
@@ -79,13 +79,13 @@ fun BookItem(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
-                        text = "共${book.totalChapters}章",
+                        text = "${book.totalChapters} chapters total",
                         style = MaterialTheme.typography.bodySmall,
                         color = MaterialTheme.colorScheme.onSurfaceVariant
                     )
                     if (book.readChapters > 0)
                         Text(
-                            text = ",已读:${(book.readChapters % book.totalChapters)}%",
+                            text = ", Read: ${ (book.readChapters % book.totalChapters) }%",
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
@@ -98,7 +98,7 @@ fun BookItem(
                     onStartReading()
                 },
             ) {
-                Text(text = "开始阅读", style = MaterialTheme.typography.bodySmall)
+                Text(text = "Start reading", style = MaterialTheme.typography.bodySmall)
             }
         }
     }

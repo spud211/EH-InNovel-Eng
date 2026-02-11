@@ -47,7 +47,7 @@ fun TextAudioView(
                     }
                 }
             ) {
-                Text("打开 Audio")
+                Text("Open Audio")
             }
             Button(
                 modifier = Modifier.weight(1f),
@@ -58,13 +58,13 @@ fun TextAudioView(
                     }
                 }
             ) {
-                Text("关闭 Audio")
+                Text("Close Audio")
             }
         }
 
         // 将接收到的音频数据转成文本并展示
         Text(
-            text = "音频事件 (audioEvent)",
+            text = "Audio event (audioEvent)",
             style = MaterialTheme.typography.labelMedium,
             modifier = Modifier.fillMaxWidth()
         )
@@ -79,7 +79,7 @@ fun TextAudioView(
         ) {
             if (displayLines.isEmpty()) {
                 Text(
-                    text = "暂无数据。打开 Audio 后，宿主推送的 PCM 会在此显示。",
+                    text = "No data. After opening Audio, PCM pushed by the host will be displayed here.",
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant
                 )

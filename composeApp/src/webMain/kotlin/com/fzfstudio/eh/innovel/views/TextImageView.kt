@@ -53,7 +53,7 @@ fun TextImageView() {
             modifier = Modifier.fillMaxWidth(),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            Text("宽 x 高", style = MaterialTheme.typography.labelMedium)
+            Text("Width x Height", style = MaterialTheme.typography.labelMedium)
             Row(
                 modifier = Modifier.fillMaxWidth(),
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
@@ -158,7 +158,7 @@ fun TextImageView() {
                 }
             }
         ) {
-            Text("测试上传 (${width}x${height})")
+            Text("Test upload (${width}x${height})")
         }
     }
 }

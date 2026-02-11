@@ -47,11 +47,11 @@ fun DeviceInfoCard(
         )
     ) {
         if (deviceInfo == null) {
-            PlaceholderCard(
+                PlaceholderCard(
                 modifier = Modifier
                     .fillMaxWidth()
                     .height(128.dp),
-                text = "无设备"
+                text = "No device"
             )
         } else {
             Box(

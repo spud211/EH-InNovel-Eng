@@ -33,7 +33,7 @@ fun UserBookshelfCard(
     modifier: Modifier = Modifier,
     userInfo: UserInfo?,
 ) {
-    val displayName = userInfo?.name ?: "我"
+    val displayName = userInfo?.name ?: "Me"
     val avatarLabel = displayName.take(1)
     Card(
         modifier = modifier,
@@ -65,12 +65,12 @@ fun UserBookshelfCard(
                     )
                 }
                 Text(
-                    text = "${displayName}的书架",
+                    text = "${displayName}'s bookshelf",
                     style = MaterialTheme.typography.titleMedium
                 )
             }
             Text(
-                text = "图书列表信息",
+                text = "Book list info",
                 style = MaterialTheme.typography.bodySmall,
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
